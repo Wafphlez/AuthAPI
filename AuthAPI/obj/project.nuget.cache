@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fthV5lfdMq52sQrkKpgGv0ivagnHppleqL6en4aNznoAHLontvp0uEMDi/b+l1yWyDoszf4V9feSNMSjypoAHw==",
+  "success": true,
+  "projectFilePath": "F:\\Users\\wafph\\source\\repos\\AuthAPI\\AuthAPI\\AuthAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wafph\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
