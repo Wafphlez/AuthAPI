@@ -8,6 +8,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace AuthAPI
@@ -28,6 +29,33 @@ namespace AuthAPI
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
             {
                 options.LoginPath = "/login";
+                options.AccessDeniedPath = "/denied";
+                options.Events = new CookieAuthenticationEvents()
+                {
+                    OnSigningIn = async context =>
+                    {
+                        var principal = context.Principal;
+
+                        if (principal.HasClaim(c => c.Type == ClaimTypes.Role))
+                        {
+                            if (principal.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role).Value == "Waffle")
+                            {
+                                var claimIdentity = principal.Identity as ClaimsIdentity;
+                                claimIdentity.AddClaim(new Claim(ClaimTypes.Role, "Admin"));
+                            }
+                        }
+
+                        await Task.CompletedTask;
+                    },
+                    OnSignedIn = async context =>
+                    {
+                        await Task.CompletedTask;
+                    },
+                    OnValidatePrincipal = async context =>
+                    {
+                        await Task.CompletedTask;
+                    }
+                };
             });
         }
 

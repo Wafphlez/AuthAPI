@@ -3,10 +3,17 @@
 *@
 @{
     var returnUrl = ViewData["ReturnUrl"] as string;
+    var error = TempData["Error"] as string;
+
 }
 <h1>Login here:</h1>
+
 <form action="/login?ReturnUrl=@System.Net.WebUtility.UrlEncode(returnUrl)" method="post">
     <input type="text" name="username" placeholder="Username"/>
     <input type="text" name="password" placeholder="Password"/>
-    <input type="submit"  value="Login"/>
+    <input type="submit" value="Login"/>
 </form>
+@if (!string.IsNullOrEmpty(error))
+{
+    <p class="alert-danger" style="margin-top:5px; margin-bottom:5px; padding:5px">@error</p>
+}
