@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,7 +27,12 @@ namespace AuthAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+            services.AddAuthentication(options =>
+            {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = GoogleDefaults.AuthenticationScheme;
+            })
+            .AddCookie(options =>
             {
                 options.LoginPath = "/login";
                 options.AccessDeniedPath = "/denied";
@@ -56,6 +62,12 @@ namespace AuthAPI
                         await Task.CompletedTask;
                     }
                 };
+            }).AddGoogle(options =>
+            {
+                options.ClientId = "761203822657-l7djc72klpqfe8on2u2alrro6upu6ibf.apps.googleusercontent.com";
+                options.ClientSecret = "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";
+                options.CallbackPath = "/auth";
+                options.AuthorizationEndpoint += "?prompt=consent";
             });
         }
 

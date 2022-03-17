@@ -1,11 +1,42 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Microsoft.AspNetCore.Authentication.Google/5.0.15": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Authentication.Google.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Authentication.Google.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.AspNetCore.Authentication.Google/5.0.15": {
+      "sha512": "xG4cMP4vNvNx9mY4q6xDDcLbhGiH3P3GEIx4RVPNBD1HTCVu+bvAST2Tx7sywAw8VzrewBR+hrRiVOBwxKC2pQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authentication.google/5.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net5.0/Microsoft.AspNetCore.Authentication.Google.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Authentication.Google.xml",
+        "microsoft.aspnetcore.authentication.google.5.0.15.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.google.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Microsoft.AspNetCore.Authentication.Google >= 5.0.15"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\wafph\\.nuget\\packages\\": {}
@@ -45,6 +76,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Google": {
+            "target": "Package",
+            "version": "[5.0.15, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

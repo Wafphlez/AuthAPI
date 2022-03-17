@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fthV5lfdMq52sQrkKpgGv0ivagnHppleqL6en4aNznoAHLontvp0uEMDi/b+l1yWyDoszf4V9feSNMSjypoAHw==",
+  "dgSpecHash": "k71jernS3Wk8UgvLqr8TLhl1itGhREHDZ0xnEP4iXw8n4mMTL2H5XaXlEQJgWxetyy2JJ4K3c3ZPvCKSWIrYiQ==",
   "success": true,
   "projectFilePath": "F:\\Users\\wafph\\source\\repos\\AuthAPI\\AuthAPI\\AuthAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\wafph\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\5.0.15\\microsoft.aspnetcore.authentication.google.5.0.15.nupkg.sha512",
     "C:\\Users\\wafph\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []

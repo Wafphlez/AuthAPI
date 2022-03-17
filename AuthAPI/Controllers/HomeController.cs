@@ -32,7 +32,7 @@ namespace AuthAPI.Controllers
             return View();
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize]
         public IActionResult Secured()
         {
             return View();
@@ -72,6 +72,7 @@ namespace AuthAPI.Controllers
         {
             await HttpContext.SignOutAsync();
             return Redirect("/");
+            // return Redirect("https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue://localhost:5001");
         }
 
         [HttpGet("denied")]

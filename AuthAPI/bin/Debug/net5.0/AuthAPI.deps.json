@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "AuthAPI/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Google": "5.0.15",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -322,6 +323,17 @@
         },
         "compile": {
           "AuthAPI.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Google/5.0.15": {
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "assemblyVersion": "5.0.15.0",
+            "fileVersion": "5.0.1522.11616"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Authentication.Google.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -2029,6 +2041,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authentication.Google/5.0.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xG4cMP4vNvNx9mY4q6xDDcLbhGiH3P3GEIx4RVPNBD1HTCVu+bvAST2Tx7sywAw8VzrewBR+hrRiVOBwxKC2pQ==",
+      "path": "microsoft.aspnetcore.authentication.google/5.0.15",
+      "hashPath": "microsoft.aspnetcore.authentication.google.5.0.15.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",
