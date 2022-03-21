@@ -41,3 +41,10 @@ F:\Users\wafph\source\repos\AuthAPI\AuthAPI\obj\Debug\net5.0\Razor\Views\Home\Se
 F:\Users\wafph\source\repos\AuthAPI\AuthAPI\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
 F:\Users\wafph\source\repos\AuthAPI\AuthAPI\obj\Debug\net5.0\Razor\Views\Home\Denied.cshtml.g.cs
 F:\Users\wafph\source\repos\AuthAPI\AuthAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
+F:\Users\wafph\source\repos\AuthAPI\AuthAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+F:\Users\wafph\source\repos\AuthAPI\AuthAPI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Users\wafph\source\repos\AuthAPI\AuthAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\Users\wafph\source\repos\AuthAPI\AuthAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\Users\wafph\source\repos\AuthAPI\AuthAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Users\wafph\source\repos\AuthAPI\AuthAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\Users\wafph\source\repos\AuthAPI\AuthAPI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll

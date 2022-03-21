@@ -1,10 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "k71jernS3Wk8UgvLqr8TLhl1itGhREHDZ0xnEP4iXw8n4mMTL2H5XaXlEQJgWxetyy2JJ4K3c3ZPvCKSWIrYiQ==",
+  "dgSpecHash": "/31ohFU/EEtLepE6kAukA9ctJRpcqnIZKOwS/A1ARoOA4zlgIzkDZCZ0i2+8vsag52FK3/MEzPOiD+1D1rns6A==",
   "success": true,
   "projectFilePath": "F:\\Users\\wafph\\source\\repos\\AuthAPI\\AuthAPI\\AuthAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wafph\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\5.0.15\\microsoft.aspnetcore.authentication.google.5.0.15.nupkg.sha512",
+    "C:\\Users\\wafph\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.15\\microsoft.aspnetcore.authentication.openidconnect.5.0.15.nupkg.sha512",
+    "C:\\Users\\wafph\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\wafph\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.7.1\\microsoft.identitymodel.jsonwebtokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\wafph\\.nuget\\packages\\microsoft.identitymodel.logging\\6.7.1\\microsoft.identitymodel.logging.6.7.1.nupkg.sha512",
+    "C:\\Users\\wafph\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.7.1\\microsoft.identitymodel.protocols.6.7.1.nupkg.sha512",
+    "C:\\Users\\wafph\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.7.1\\microsoft.identitymodel.protocols.openidconnect.6.7.1.nupkg.sha512",
+    "C:\\Users\\wafph\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.1\\microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\wafph\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
+    "C:\\Users\\wafph\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "C:\\Users\\wafph\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []
